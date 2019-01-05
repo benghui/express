@@ -2,7 +2,6 @@ const React = require("react");
 const DefaultLayout = require("../layout/defaultlayout");
 const round = require("math-precision").round;
 
-import {Pie} from 'react-chartjs-2';
 
 class GetFromId extends React.Component {
   render() {
@@ -26,8 +25,7 @@ class GetFromId extends React.Component {
       );
     });
     return (
-      <DefaultLayout>
-        <Pie data = {this.props.data.roe_fy14}/>        
+      <DefaultLayout>       
         <table className="table">
           <thead>
             <tr>

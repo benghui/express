@@ -1,20 +1,12 @@
 const express = require("express");
 const methodOverride = require("method-override");
 const db = require("./db");
-const session = require("express-session");
 
 const app = express();
 
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
 
-app.set('trust proxy', 1)
-app.use(session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true }
-}));
 
 const reactEngine = require("express-react-views").createEngine();
 app.set("views", __dirname + "/views");

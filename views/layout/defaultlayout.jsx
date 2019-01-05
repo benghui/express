@@ -19,14 +19,13 @@ class DefaultLayout extends React.Component {
                         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
                         crossOrigin="anonymous"
                     />
-                    <link rel="stylesheet" type="text/css" href="/style.css" />
-                    <title>{this.props.title}</title>
+                    <title>Eaciit</title>
                 </head>
                 <body>
                     <header>
                         <nav
                             className="navbar navbar-light"
-                            style={{ backgroundColor: "#32CD32" }}
+                            style={{ backgroundColor: "#FD6A02" }}
                         >
                             <a
                                 className="navbar-brand font-weight-bold"

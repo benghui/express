@@ -34,7 +34,7 @@ pool.on("error", function (err) {
 
 module.exports = {
     users: users(pool),
-    // data: data(pool),
+    data: data(pool),
 
     queryInterface: (text, params, callback) => {
         return pool.query(text, params, callback);
